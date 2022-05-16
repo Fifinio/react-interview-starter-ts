@@ -1,0 +1,132 @@
+#root{
+    background: #F0F1F5;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+#root > span{
+    margin: 2em auto; 
+}
+/* header */
+.topBar {
+    width: 100vw;
+    background: #FFFFFF;
+    margin-top: 0;
+}
+header {
+    width: 85vw;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+}
+header > * {
+    padding: 2em;
+    margin: 0;
+}
+header > a{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: auto 1em;
+}
+header > a > .MuiButton-root{
+    color: #4460F7;
+    outline: 1px solid #4460F7;
+    font-size: 0.8em;
+    text-transform: none;
+}
+header > #simple-popper {
+    background: #FFFFFF;
+    border-radius: 0.5em;
+    padding:0.2em 1em;
+    font-size: 1em;
+    outline: 1px solid black;
+}
+
+.searchBox{
+    text-align: left;
+    display: flex;
+    justify-content: left;
+    font-size: 0.6em;
+}
+.searchBox > * {
+    margin: auto;
+}
+.searchBox .MuiOutlinedInput-root{
+    min-width: 327px;
+}
+.MuiFormGroup-root label, input{
+    padding: 0.5em;
+}
+/* products */
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 80vh;
+    width: 90vw;
+    margin: 0 auto;
+    justify-content: center;
+}
+.products.product-list > * {
+    flex: 0 0 20%;
+    margin: 0.5em;
+}
+.products.empty > .MuiPaper-root {
+    padding: 4em 6em;
+    margin: 3rem;
+    text-align: center;
+    max-height: 10rem;
+}
+@media screen and (max-width: 1180px) {
+    /* header */
+    header, .searchBox, .topBar{
+        flex-direction: column;
+    }
+    header{
+        width: 100vw;
+    }
+    header > * {
+        padding: 1em;
+    }
+    header > a{
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 1em;
+    }
+    header > .MuiButton-outlined{
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 1em;
+    } 
+    header > .MuiButton-text{
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 1em;
+    } 
+    .searchBox{
+        width: 80vw;
+        margin: 0 auto;
+        text-align: center;
+        justify-content: left;
+    }
+    .searchBox .MuiFormGroup-root {
+        justify-content: left;
+    }
+    .searchBox .MuiOutlinedInput-root{
+        min-width: 327px;
+        margin: auto;
+    }
+    .searchBox > * {
+        padding: 0.5em;
+        margin: 0;
+    }
+    .products.empty > .MuiPaper-root {
+    padding: 2.5em 1em;
+    max-height: 10rem;
+    margin: 3rem;
+    text-align: center;
+}
+}    

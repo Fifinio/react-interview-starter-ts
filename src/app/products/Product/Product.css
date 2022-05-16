@@ -1,0 +1,60 @@
+.product {
+    max-height: 400px;
+    border-radius: 5em;
+    min-height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+.product .MuiCardMedia-media{
+    height: 50%;
+}
+.product .promo{
+    border-radius: 0;
+    position: absolute;
+    top: 1.5em;
+    left: 0;
+    background: #F9A52B;
+    padding: 0 0.5em;
+    line-height: 1.5rem;
+    color: white;
+    font-size: 0.5em;
+    text-align: center;
+
+}
+.product .MuiTypography-body2{
+    min-height: 2.5em;
+    padding: 0.5em;
+    margin-bottom: 2em;
+}
+.product .MuiButton-contained{
+    text-transform: none;
+    background-color: var(--btn-color);
+    width: 90%;
+    padding: 0.7em;
+    margin: 0.75em auto;
+    margin-top: -0.75em;
+    color: white;
+    transition: .2s;
+}
+.product .MuiButton-contained:hover{
+    background-color: var(--btn-color-hover);
+}
+.product .MuiButton-contained:disabled{
+    background-color: var(--btn-color-disabled);
+    color: white;
+}
+.productsModal {
+    border-radius: 3em;
+}
+@media screen and (max-width: 1180px) {
+    .product {
+        width: 100vw;
+        margin: 0 auto;
+    }
+    .product .MuiCardMedia-media{
+        height: 100%;
+    }
+    
+}
